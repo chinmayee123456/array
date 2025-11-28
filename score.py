@@ -1,5 +1,4 @@
 import sys
-
 if len(sys.argv) > 1:
     scores_list = list(map(int, sys.argv[1:]))
     print("User provided values:")
@@ -9,7 +8,11 @@ else:
 
 total = sum(scores_list)
 average = total / len(scores_list)
+maximum = max(scores_list)
+minimum = min(scores_list)
 
 print("Scores:", scores_list)
 print("Sum of Scores:", total)
 print("Average Score:", average)
+print("Maximum Score:", maximum)
+print("Minimum Score:", minimum)
